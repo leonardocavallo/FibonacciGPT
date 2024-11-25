@@ -6,7 +6,7 @@ FibonacciGPT è un progetto creato per celebrare il Fibonacci Day. Questo proget
 
 1. Clona il repository:
     ```sh
-    git clone <repository-url>
+    git clone https://github.com/leonardocavallo/FibonacciGPT
     ```
 2. Naviga nella directory del progetto:
     ```sh

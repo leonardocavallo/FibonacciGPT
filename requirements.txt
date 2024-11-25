@@ -1,2 +1,2 @@
-embedchain
-os
+flask
+requests
