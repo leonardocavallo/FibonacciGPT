@@ -1,0 +1,14 @@
+.vscode/
+*.log
+
+# Distribution / packaging
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+*.egg-info/
+dist/
+build/
+__pycache__/

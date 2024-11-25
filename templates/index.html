@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html data-bs-theme="dark" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>FibonacciGPT</title>
+    <link rel="stylesheet" href="../static/assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter&amp;display=swap">
+    <link rel="stylesheet" href="../static/assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="../static/assets/css/bs-theme-overrides.css">
+</head>
+
+<body style="background: #212121;">
+    <nav class="navbar navbar-expand-md bg-body" style="border-radius: 10px;background: #2F2F2F;--bs-body-bg: #2F2F2F;margin-top: 10px;margin-right: 10px;margin-left: 10px;">
+        <div class="container-fluid"><a class="navbar-brand" href="#" style="font-family: Inter, sans-serif;">FibonacciGPT</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link active" href="#" style="font-family: Inter, sans-serif;">AI</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" style="font-family: Inter, sans-serif;">Informazioni</a></li>
+                    <li class="nav-item"></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container" style="text-align: center;margin-bottom: 50px;">
+        <p style="margin-top: 126px;font-size: 40px;font-family: Inter, sans-serif;">Ciao, Sono FibonacciGPT!</p><input type="text" id="prompt-input" style="text-align: left;border-radius: 20px;background: #2F2F2F;border-style: none;padding-top: 12px;padding-bottom: 12px;margin-left: -8px;height: 50px;width: 350px;font-family: Inter, sans-serif;padding-left: 25px;padding-right: 25px;" placeholder="Inserisci Il Tuo Prompt"><button class="btn btn-primary" id="send-button" type="button" style="font-size: 13px;border-radius: 100px;width: 50px;height: 50px;background: #2F2F2F;border-style: none;margin-left: 10px;"><i class="far fa-paper-plane"></i></button>
+        <div id="loading-div" style="margin-top: 20px; display: none">
+            <p>FibonacciGPT Sta Pensando...</p><span class="spinner-border spinner-border-sm" role="status" style="width: 40px;height: 40px;"></span>
+        </div>
+    </div>
+    <div id="response-div" style="display: none;">
+        <div class="container" style="padding-left: 15%;padding-right: 15%;">
+            <div class="row">
+                <div class="col-lg-1 col-xl-1" style="padding-left: 0px;">
+                    <div class="d-flex align-items-center justify-content-center" style="width: 70px;height: 70px;border-radius: 100px;background: #2F2F2F;text-align: center;"><i class="fas fa-user-circle" style="font-size: 30px;"></i></div>
+                </div>
+                <div class="col offset-0">
+                    <div style="background: var(--bs-body-bg);padding-top: 25px;padding-right: 25px;padding-bottom: 25px;padding-left: 25px;border-radius: 20px;margin-top: 70px;">
+                        <p id="prompt-text" style="font-family: 'Inter';padding-top: 0px;margin-bottom: 0px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque fringilla risus eget urna rhoncus, finibus tincidunt nisi cursus. Donec sed ante sit amet ligula interdum commodo. Donec feugiat porta enim, vel condimentum est tempus eu. In luctus nunc sed sodales aliquet. Vivamus eu tempus nisl. Nam venenatis mattis diam nec sodales. Phasellus bibendum sem in justo hendrerit auctor. Curabitur</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container" style="padding-left: 15%;padding-right: 15%;margin-top: 24px;">
+            <div class="row">
+                <div class="col offset-lg-0">
+                    <div style="background: var(--bs-body-bg);padding-top: 25px;padding-right: 25px;padding-bottom: 25px;padding-left: 25px;border-radius: 20px;margin-top: 70px;">
+                        <p id="response-text" style="font-family: 'Inter';padding-top: 0px;margin-bottom: 0px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque fringilla risus eget urna rhoncus, finibus tincidunt nisi cursus. Donec sed ante sit amet ligula interdum commodo. Donec feugiat porta enim, vel condimentum est tempus eu. In luctus nunc sed sodales aliquet. Vivamus eu tempus nisl. Nam venenatis mattis diam nec sodales. Phasellus bibendum sem in justo hendrerit auctor. Curabitur</p>
+                    </div>
+                </div>
+                <div class="col-lg-1 col-xl-1 offset-lg-0" style="padding-left: 0px;">
+                    <div class="d-flex align-items-center justify-content-center" style="width: 70px;height: 70px;border-radius: 100px;background: #2F2F2F;text-align: right;"><i class="fas fa-robot" style="font-size: 30px;"></i></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="height: 70px;margin-top: 350px;background: #2F2F2F;"></div>
+    <script src="../static/assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../static/assets/js/app.js"></script>
+</body>
+
+</html>
