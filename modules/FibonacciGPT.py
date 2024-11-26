@@ -5,7 +5,7 @@ url = "https://api.braininc.net/stream/bas-demo-v4/nlp/completions_generation"
 headers = {
     "accept": "*/*",
     "accept-language": "it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7,de;q=0.6,ga;q=0.5,es;q=0.4",
-    "brain-guest-user-key": "8a2553b6-6b44-4482-a17e-cc9c22d3022c",
+    "brain-guest-user-key": "11fc5224-be7d-458c-95bb-45258bf4bfad",
     "content-type": "application/json",
     "sec-ch-ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
     "sec-ch-ua-mobile": "?0",
@@ -13,20 +13,20 @@ headers = {
     "sec-fetch-dest": "empty",
     "sec-fetch-mode": "cors",
     "sec-fetch-site": "cross-site",
-    "x-brain-imagica-id": "07865388-67cb-41a1-8c9a-9f3bde5df806",
+    "x-brain-imagica-id": "8ec24c44-d20b-40dd-9476-7d71c6fb45e3",
     "x-brain-user-tz": "Europe/Rome"
 }
 
 def generate(prompt:str):
     body = {
         "identifier_type": "object_id",
-        "identifier_value": "5519687",
+        "identifier_value": "5555640",
         "stream": False,
         "variables": {
             "input": prompt,
             "Topic": prompt,
         },
-        "pubsub_topic": "/studios/8a2553b6-6b44-4482-a17e-cc9c22d3022c/wsuid_5547441_new-edge-2_nodeid_editor-1/textGenStream/1732483603303"
+        "pubsub_topic": "/studios/11fc5224-be7d-458c-95bb-45258bf4bfad/wsuid_5555672_new-edge-2_nodeid_editor-1/textGenStream/1732638469572"
     }
 
     response = requests.post(url, headers=headers, json=body)

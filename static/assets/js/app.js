@@ -7,14 +7,13 @@ document.addEventListener('DOMContentLoaded', function() {
     const responseText = document.getElementById('response-text');
 
     sendButton.addEventListener('click', function() {
-        loadingDiv.style.display = 'block';
         const prompt = promptInput.value.trim();
 
         if (!prompt) {
             alert('Il prompt non può essere vuoto o contenere solo spazi.');
             return;
         }
-
+        loadingDiv.style.display = 'block';
         const headers = {
             'Content-Type': 'application/json',
             'chiavesupersegreta': 'malig'
@@ -35,4 +34,12 @@ document.addEventListener('DOMContentLoaded', function() {
         })
         .catch(error => console.error('Error:', error));
     });
+
+    document.querySelector("#prompt-input").addEventListener("keyup", event => {
+        if(event.key == "Enter") {
+            document.querySelector("#send-button").click(); // Things you want to do.
+            event.preventDefault(); // No need to `return false;`.
+        }; 
+    });
+
 });
