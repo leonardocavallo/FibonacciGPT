@@ -45,6 +45,7 @@ Lista di funzioni da sistemare / introdurre
 
 - [ ] Sistemare tasto invio della tastiera, che al momento non manda il prompt
 - [ ] Adattare l'input del prompt in base alla lunghezza del testo
+- [ ] Modificare il prompt sottostante di Imagica, in modo che la risposta sia sempre nel contesto di Fibonacci. Per esempio la risposta alla domanda "Quanti anni hai?" dovrebbe essere l'eta di Fibonacci, al momento l'AI risponde che non può eseguire questa richiesta
 
 # Possibili miglioramenti  📃
 
