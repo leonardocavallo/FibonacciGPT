@@ -44,7 +44,6 @@ Per la creazione dell'HTML e del CSS è stato utilizzato Bootstrap Studio, un po
 Lista di funzioni da sistemare / introdurre
 
 - [ ] Sistemare tasto invio della tastiera, che al momento non manda il prompt
-- [ ] Sistemare scheda "Informazioni", che al momento non fa niente
 - [ ] Adattare l'input del prompt in base alla lunghezza del testo
 
 # Possibili miglioramenti  📃
