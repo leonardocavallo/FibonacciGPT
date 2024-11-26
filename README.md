@@ -38,3 +38,18 @@ FibonacciGPT utilizza un'API reverse engineered di Imagica.ai per generare rispo
 ## Creazione dell'interfaccia 🌐
 
 Per la creazione dell'HTML e del CSS è stato utilizzato Bootstrap Studio, un potente strumento per la progettazione di siti web reattivi.
+
+# TODO (da fare) 📃
+
+Lista di funzioni da sistemare / introdurre
+
+- [ ] Sistemare tasto invio della tastiera, che al momento non manda il prompt
+- [ ] Sistemare scheda "Informazioni", che al momento non fa niente
+- [ ] Adattare l'input del prompt in base alla lunghezza del testo
+
+# Possibili miglioramenti  📃
+
+Funzioni work in progress, che potrebbero o non potrebbero essere aggiunte nella versione finale.
+
+- [ ] Migliorare sicurezza generando un hash nel browser che viene verificato con il server, per rendere il reverse engineering leggermente più complicato
+- [ ] Aggiungere supporto per altri contenuti generati da Imagica (tipo video, immagini, audio) e una formattazione migliore
